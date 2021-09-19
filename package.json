@@ -1,0 +1,24 @@
+{
+  "name": "layer-ui-vue",
+  "version": "0.0.1",
+  "description": "这是一个Vue2的UI框架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JFrank2019/layer-ui-vue.git"
+  },
+  "keywords": [
+    "vue",
+    "ui",
+    "layer"
+  ],
+  "author": "jfrank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JFrank2019/layer-ui-vue/issues"
+  },
+  "homepage": "https://github.com/JFrank2019/layer-ui-vue#readme"
+}
