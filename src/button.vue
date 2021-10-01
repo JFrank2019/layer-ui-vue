@@ -1,11 +1,11 @@
 <template>
     <button class="ui-button" :class="{ [`icon-${iconPosition}`]: true }">
-        <svg v-if="icon" class="icon">
-            <use :xlink:href="`#i-${icon}`"></use>
-        </svg>
-        <div class="content">
+        <template v-if="icon">
+            <ui-icon :name="icon" />
+        </template>
+        <span class="content">
             <slot />
-        </div>
+        </span>
     </button>
 </template>
 
@@ -42,6 +42,7 @@ export default {
     }
     > .content {
         order: 2;
+        display: block;
     }
     &:hover {
         border-color: var(--border-color-hover);
