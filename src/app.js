@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Button from './button';
 
-Vue.component('l-button', Button);
+Vue.component('ui-button', Button);
 
 new Vue({
     el: '#app',
