@@ -12,7 +12,14 @@
 <script>
 export default {
     name: 'ui-button',
-    props: ['icon', 'iconPosition'],
+    props: {
+        icon: {},
+        iconPosition: {
+            type: String,
+            default: 'left',
+            validator: (value) => !(value !== 'left' && value !== 'right'),
+        },
+    },
 };
 </script>
 
@@ -30,7 +37,7 @@ export default {
     vertical-align: middle;
     > .icon {
         order: 1;
-        margin-right: .3em;
+        margin-right: 0.3em;
         margin-left: 0;
     }
     > .content {
@@ -48,7 +55,7 @@ export default {
     &.icon-right {
         > .icon {
             order: 2;
-            margin-left: .3em;
+            margin-left: 0.3em;
             margin-right: 0;
         }
         > .content {
