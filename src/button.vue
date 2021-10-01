@@ -3,6 +3,9 @@
         <template v-if="icon">
             <ui-icon :name="icon" />
         </template>
+        <template>
+            <ui-icon class="loading" name="loading" />
+        </template>
         <span class="content">
             <slot />
         </span>
@@ -24,6 +27,14 @@ export default {
 </script>
 
 <style lang="scss">
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .ui-button {
     font-size: var(--font-size);
     height: var(--button-height);
@@ -62,6 +73,9 @@ export default {
         > .content {
             order: 1;
         }
+    }
+    .loading {
+        animation: spin 1.5s linear infinite;
     }
 }
 </style>
