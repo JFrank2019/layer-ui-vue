@@ -14,6 +14,7 @@
                 padding: 0;
                 box-sizing: border-box;
             }
+
             html {
                 --button-height: 32px;
                 --font-size: 14px;
@@ -24,18 +25,29 @@
                 --border-color: #999;
                 --border-color-hover: #666;
             }
+
             #app {
                 margin: 20px;
             }
+
             body {
                 font-size: var(--font-size);
+            }
+        </style>
+        <style>
+            .icon {
+                width: 1em;
+                height: 1em;
             }
         </style>
     </head>
     <body>
         <div id="app">
-            <l-button></l-button>
+            <ui-button icon="setting" icon-position="right">我爱</ui-button>
+            <ui-button>我爱</ui-button>
+            <ui-button icon="setting" icon-position="left">我爱</ui-button>
         </div>
+        <script src="//at.alicdn.com/t/font_2824650_zafwcqco9si.js"></script>
         <script src="./src/app.js"></script>
     </body>
 </html>
