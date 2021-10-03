@@ -4,6 +4,7 @@
   "description": "这是一个Vue2的UI框架",
   "main": "index.js",
   "scripts": {
+    "dev": "./node_modules/.bin/parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,10 +29,11 @@
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.2",
     "parcel-bundler": "^1.12.5",
+    "prettier": "^2.4.1",
     "sass": "^1.41.1",
     "vue-template-compiler": "^2.6.14"
   },
   "alias": {
-    "vue" : "./node_modules/vue/dist/vue.common.js"
+    "vue": "./node_modules/vue/dist/vue.common.js"
   }
 }
