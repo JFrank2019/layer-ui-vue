@@ -1,41 +1,51 @@
 {
-  "name": "layer-ui-vue",
-  "version": "0.0.1",
-  "description": "这是一个Vue2的UI框架",
-  "main": "index.js",
-  "scripts": {
-    "dev": "./node_modules/.bin/parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JFrank2019/layer-ui-vue.git"
-  },
-  "keywords": [
-    "vue",
-    "ui",
-    "layer"
-  ],
-  "author": "jfrank",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JFrank2019/layer-ui-vue/issues"
-  },
-  "homepage": "https://github.com/JFrank2019/layer-ui-vue#readme",
-  "dependencies": {
-    "vue": "^2.6.14",
-    "vue-hot-reload-api": "^2.3.4"
-  },
-  "devDependencies": {
-    "@vue/component-compiler-utils": "^3.2.2",
-    "chai": "^4.3.4",
-    "chai-spies": "^1.0.0",
-    "parcel-bundler": "^1.12.5",
-    "prettier": "^2.4.1",
-    "sass": "^1.41.1",
-    "vue-template-compiler": "^2.6.14"
-  },
-  "alias": {
-    "vue": "./node_modules/vue/dist/vue.common.js"
-  }
+    "name": "layer-ui-vue",
+    "version": "0.0.1",
+    "description": "这是一个Vue2的UI框架",
+    "main": "index.js",
+    "scripts": {
+        "dev": "./node_modules/.bin/parcel index.html",
+        "dev-test": "parcel watch test/* --no-cache & karma start",
+        "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JFrank2019/layer-ui-vue.git"
+    },
+    "keywords": [
+        "vue",
+        "ui",
+        "layer"
+    ],
+    "author": "jfrank",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/JFrank2019/layer-ui-vue/issues"
+    },
+    "homepage": "https://github.com/JFrank2019/layer-ui-vue#readme",
+    "dependencies": {
+        "vue": "^2.6.14",
+        "vue-hot-reload-api": "^2.3.4"
+    },
+    "devDependencies": {
+        "@vue/component-compiler-utils": "^3.2.2",
+        "chai": "^4.3.4",
+        "chai-spies": "^1.0.0",
+        "karma": "^6.3.4",
+        "karma-chai": "^0.1.0",
+        "karma-chai-spies": "^0.1.4",
+        "karma-chrome-launcher": "^3.1.0",
+        "karma-mocha": "^2.0.1",
+        "karma-sinon-chai": "^2.0.2",
+        "mocha": "^9.1.2",
+        "parcel-bundler": "^1.12.5",
+        "prettier": "^2.4.1",
+        "sass": "^1.41.1",
+        "sinon": "^11.1.2",
+        "sinon-chai": "^3.7.0",
+        "vue-template-compiler": "^2.6.14"
+    },
+    "alias": {
+        "vue": "./node_modules/vue/dist/vue.common.js"
+    }
 }

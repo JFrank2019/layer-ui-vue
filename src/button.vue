@@ -13,8 +13,12 @@
 </template>
 
 <script>
+import Icon from './icon';
 export default {
     name: 'ui-button',
+    components: {
+        'ui-icon': Icon
+    },
     props: {
         icon: {},
         loading: {
